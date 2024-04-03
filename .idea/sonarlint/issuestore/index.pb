@@ -27,3 +27,5 @@ y
 Iapp/src/main/java/com/example/basiccamera/ui/screen/camera/CameraEvent.kt,f/9/f90a0807acb4364f2f8d037bf78307a5d824358c
 ‚
 Rapp/src/main/java/com/example/basiccamera/ui/component/CheckPermissionComponent.kt,a/5/a5b1de7baa09abd12d89ba4043282c02ba962938
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

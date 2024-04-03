@@ -93,4 +93,7 @@ dependencies {
 
     // timmber(logging)
     implementation("com.jakewharton.timber:timber:5.0.1")
+
+    // Colil
+    implementation("io.coil-kt:coil-compose:2.6.0")
 }
