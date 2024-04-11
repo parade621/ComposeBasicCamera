@@ -14,10 +14,12 @@
 
 ### ‣ Preview
 
-1. 후방 카메라
+#### 1. 후방 카메라
   <img src="https://github.com/parade621/Compose_Basic_Camera/assets/36446270/3467d292-fe8b-4f63-8626-02186ea14204" width="50%" height="50%">
 
-2. 전방 카메라
+<br>
+
+#### 2. 전방 카메라
   <img src="https://github.com/parade621/Compose_Basic_Camera/assets/36446270/fdbcae99-5ae9-4bb3-9ba6-ba779ba2858c" width="50%" height="50%">
 
 <br>
