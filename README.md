@@ -16,29 +16,29 @@ Compose Custom Camera View가 필요한 경우 참조하기 위해 작성한 샘
 
 ## 빌드 환경
 
-### Android Studio
+#### Android Studio
 
 - Android Studio Hedgehog | 2023.1.1 Patch 1
 - Build #AI-231.9392.1.2311.11255304, built on December 27, 2023
 
-### Android SDK
+#### Android SDK
 
 - Android SDK Build-Tools 35-rc2
 - Android SDK Platform-Tools 34.0.5
 
-### Java
+#### Java
 
 - Java Version: 17
 
-### Kotlin
+#### Kotlin
 
 - kotlin Version: 1.9.0
 
-### Compose Compiler
+#### Compose Compiler
 
 - Kotlin Compose Compiler: 1.5.1
 
-### Gradle
+#### Gradle
 
 - Android Gradle Plugin Version: 8.1.2
 - Gradle Version: 8.2
@@ -61,7 +61,7 @@ Component의 기능 확인 목적의 샘플 코드로, presentation layer에 해
 └── ui
 ```
 
-### ui 구성
+#### ui 구성
 
 ```agsl
 └── ui
@@ -82,7 +82,7 @@ Component의 기능 확인 목적의 샘플 코드로, presentation layer에 해
 
 ## 기능 목록
 
-### 1. 후면 카메라
+#### 1. 후면 카메라
 
 - 후면 카메라(default)로 화면이 시작됩니다.
 - 촬영 버튼을 누르면 사진이 촬영되고, 촬영한 사진이 화면에 표시됩니다.
@@ -92,7 +92,7 @@ Component의 기능 확인 목적의 샘플 코드로, presentation layer에 해
 
 <br>
 
-### 2. 전방 카메라
+#### 2. 전방 카메라
 
 - 전면 카메라로 전환되면 화면이 시작됩니다.
 - 촬영 버튼을 누르면 사진이 촬영되고, 촬영한 사진이 화면에 표시됩니다.
