@@ -1,10 +1,10 @@
 # Compose Basic Camera Sample Code
 
-## [기능 설명 및 앱 동작 Preview]
-
 ## 개요
 
 Compose Custom Camera View가 필요한 경우 참조하기 위해 작성한 샘플 코드입니다.
+
+<img src="assets/Screenshot_1712823700.png" width="60%" height="60%">
 
 ### 목표
 
@@ -62,6 +62,7 @@ Component의 기능 확인 목적의 샘플 코드로, presentation layer에 해
 ```
 
 ### ui 구성
+
 ```agsl
 └── ui
     ├── components
@@ -75,6 +76,7 @@ Component의 기능 확인 목적의 샘플 코드로, presentation layer에 해
     │   └── CameraViewModel.kt
     └── theme
 ```
+
 - Screen의 경우 Compose의 원활한 구성을 위해 MVI 패턴을 바탕으로 구성하였습니다.
 - CameraComponent는 Bitmap 후처리를 위한 viewModel을 가지고 있습니다.
 
