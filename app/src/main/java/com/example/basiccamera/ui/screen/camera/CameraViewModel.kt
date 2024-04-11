@@ -1,4 +1,4 @@
-package com.example.basiccamera.model
+package com.example.basiccamera.ui.screen.camera
 
 import android.graphics.Bitmap
 import androidx.lifecycle.ViewModel
