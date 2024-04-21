@@ -1,4 +1,4 @@
-package com.example.basiccamera.ui.component
+package com.example.basiccamera.presentation.ui.component
 
 import android.Manifest
 import android.content.pm.PackageManager

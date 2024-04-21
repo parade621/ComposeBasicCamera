@@ -1,9 +1,9 @@
-package com.example.basiccamera.ui.screen.camera
+package com.example.basiccamera.presentation.ui.screen.camera
 
 import android.graphics.Bitmap
 import androidx.lifecycle.ViewModel
-import com.example.basiccamera.ui.screen.camera.CameraEvent
-import com.example.basiccamera.ui.screen.camera.CameraState
+import com.example.basiccamera.presentation.ui.screen.camera.CameraEvent
+import com.example.basiccamera.presentation.ui.screen.camera.CameraState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
@@ -20,6 +20,7 @@ class CameraViewModel : ViewModel() {
             CameraEvent.CaptureProcessed -> captureProcessed()
             is CameraEvent.GetImageBitmap -> getImageBitmap(event.bitmap)
             is CameraEvent.GrantCameraPermission -> grantCameraPermission(event.permission)
+            is CameraEvent.ChangeMode -> changeMode(event.mode)
         }
     }
 
@@ -42,6 +43,10 @@ class CameraViewModel : ViewModel() {
 
     private fun grantCameraPermission(permission: Boolean) {
         _state.update { it.copy(permitCamera = permission) }
+    }
+
+    private fun changeMode(mode: CameraMode) {
+        _state.update { it.copy(mode = mode) }
     }
 
 }

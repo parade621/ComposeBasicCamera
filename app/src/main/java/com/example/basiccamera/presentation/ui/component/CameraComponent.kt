@@ -1,5 +1,6 @@
-package com.example.basiccamera.ui.component
+package com.example.basiccamera.presentation.ui.component
 
+import android.content.Context
 import android.graphics.Bitmap
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
@@ -21,10 +22,14 @@ import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.LifecycleOwner
+import com.example.basiccamera.domain.camera.CameraComponentModel
 import timber.log.Timber
 
 @Composable
 fun CameraComponent(
+    context: Context = LocalContext.current,
+    lifecycleOwner: LifecycleOwner = LocalLifecycleOwner.current,
     modifier: Modifier = Modifier,
     selfMode: Boolean,
     takeAction: Boolean,
@@ -35,8 +40,6 @@ fun CameraComponent(
     } else {
         CameraSelector.DEFAULT_BACK_CAMERA
     }
-    val context = LocalContext.current
-    val lifecycleOwner = LocalLifecycleOwner.current
     val imageCapture = remember { ImageCapture.Builder().build() }
     val cameraProviderFuture = remember { ProcessCameraProvider.getInstance(context) }
     val cameraProvider: ProcessCameraProvider = cameraProviderFuture.get()

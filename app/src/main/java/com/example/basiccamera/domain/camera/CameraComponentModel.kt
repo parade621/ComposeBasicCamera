@@ -1,4 +1,4 @@
-package com.example.basiccamera.ui.component
+package com.example.basiccamera.domain.camera
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory

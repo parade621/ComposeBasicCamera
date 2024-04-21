@@ -9,9 +9,9 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.example.basiccamera.ui.screen.camera.CameraViewModel
-import com.example.basiccamera.ui.screen.camera.CameraScreen
-import com.example.basiccamera.ui.theme.BasicCameraTheme
+import com.example.basiccamera.presentation.ui.screen.camera.CameraViewModel
+import com.example.basiccamera.presentation.ui.screen.camera.CameraScreen
+import com.example.basiccamera.presentation.ui.theme.BasicCameraTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
