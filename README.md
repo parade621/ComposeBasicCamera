@@ -4,7 +4,7 @@
 
 Compose Custom Camera View가 필요한 경우 참조하기 위해 작성한 샘플 코드입니다.
 
-<img src="https://github.com/parade621/ComposeCameraSample/assets/36446270/ee1fae21-a540-417a-b8c8-7b5d0943650e)" width="30%" height="30%">
+<img src="assets/Screenshot_1712823700.png" width="50%" height="50%">
 
 ### 목표
 
