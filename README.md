@@ -1,20 +1,17 @@
 # Compose Basic Camera Sample Code
 
-## 개요
-
-Compose Custom Camera View가 필요한 경우 참조하기 위해 작성한 샘플 코드입니다.
+## Overview
+This is the sample project for reference if I need to Compose Custom Camera View.
 
 <img src="assets/Screenshot_1712823700.png" width="50%" height="50%">
 
-### 목표
+## Goal
+- CameraX Custom View based on Compose
+- Present preview and take a picture using CameraX
+- Flip the camera to the front and Back
+- get bitmap data from CameraX
 
-- Jetpack Compose를 사용하여 기본적인 카메라 기능을 구현합니다.
-- CameraX를 사용하여 카메라 프리뷰를 표시하고 사진을 촬영합니다.
-- 전면/후면 카메라 전환 기능을 구현합니다.
-- 촬영한 사진의 Bitmap을 가져오는 기능을 구현합니다.
-- (옵션) 촬영한 사진을 파일로 저장하는 기능을 구현합니다.
-
-## 빌드 환경
+## Build Environment
 
 #### Android Studio
 
@@ -43,7 +40,7 @@ Compose Custom Camera View가 필요한 경우 참조하기 위해 작성한 샘
 - Android Gradle Plugin Version: 8.1.2
 - Gradle Version: 8.2
 
-## 기술 스택
+## Tech Stack
 
 - Jetpack Compose
 - MVI pattern
@@ -51,7 +48,7 @@ Compose Custom Camera View가 필요한 경우 참조하기 위해 작성한 샘
 - Android CameraX
 - Coil (추가 예정)
 
-## 구성
+## Project Structure
 
 Component의 기능 확인 목적의 샘플 코드로, presentation layer에 해당하는 `ui`패키지를 중심으로 구성되어 있습니다.
 
@@ -61,7 +58,7 @@ Component의 기능 확인 목적의 샘플 코드로, presentation layer에 해
 └── ui
 ```
 
-#### ui 구성
+#### UI Package
 
 ```agsl
 └── ui
@@ -80,9 +77,9 @@ Component의 기능 확인 목적의 샘플 코드로, presentation layer에 해
 - Screen의 경우 Compose의 원활한 구성을 위해 MVI 패턴을 바탕으로 구성하였습니다.
 - CameraComponent는 Bitmap 후처리를 위한 viewModel을 가지고 있습니다.
 
-## 기능 목록
+## Function list
 
-#### 1. 후면 카메라
+#### 1. Back Camera
 
 - 후면 카메라(default)로 화면이 시작됩니다.
 - 촬영 버튼을 누르면 사진이 촬영되고, 촬영한 사진이 화면에 표시됩니다.
@@ -92,7 +89,7 @@ Component의 기능 확인 목적의 샘플 코드로, presentation layer에 해
 
 <br>
 
-#### 2. 전방 카메라
+#### 2. Front Camera
 
 - 전면 카메라로 전환되면 화면이 시작됩니다.
 - 촬영 버튼을 누르면 사진이 촬영되고, 촬영한 사진이 화면에 표시됩니다.

@@ -13,6 +13,6 @@ data class CameraState(
 )
 
 enum class CameraMode(val value: String) {
-    CAMERA("사진"),
-    ViDEO("동영상")
+    CAMERA("Photo"),
+    ViDEO("Video")
 }

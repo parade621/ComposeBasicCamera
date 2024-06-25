@@ -49,10 +49,6 @@ fun CameraComponent(
     val imageBitmap by cameraViewModel.imageBitmap.collectAsState()
     var processing: Boolean by remember { mutableStateOf(false) }
 
-    // 카메라 바인딩
-    // cameraProvicer를 통해 ProcessCameraProvider를 비동기적으로 가져와 카메라의 생명주기를 현재 카메라 컴포넌트 생명주기와 바인딩
-    // preview, imageCapture를 lifecycleOwner에 바인딩하여 카메라 미리보기와 이미지 캡쳐를 구현
-    // 카메라 세션 준비가 완료되면 프리뷰를 화면에 표시
     LaunchedEffect(cameraProviderFuture, cameraSelector) {
         cameraProviderFuture.addListener({
             try {
@@ -70,9 +66,6 @@ fun CameraComponent(
         }, ContextCompat.getMainExecutor(context))
     }
 
-    // takeAction 상태가 true로 변경될 때, imageCapture의 takePicture 메서드를 호출하여 이미지 캡쳐
-    // 촬영 성공 시, onCaptureSuccess 콜백에서 이미지를 비트맵으로 변환하고, 사용자 지정 작업 수행
-    // 실패 시, onError 콜백에서 실패 이유를 로그로 출력하고, 사용자 지정 작업 수행
     LaunchedEffect(takeAction, imageBitmap) {
         if (takeAction && !processing) {
             imageCapture.takePicture(
